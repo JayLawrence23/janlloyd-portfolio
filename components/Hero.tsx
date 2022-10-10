@@ -19,10 +19,16 @@ const Hero = (props: Props) => {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-ceter overflow-hidden'>
         <BackgroundCircles />
-        <h1>
-            <span>{text}</span>
-            <Cursor cursorColor='#F7AB0A' />
-        </h1>
+         <img 
+            className='relative rounded-full h-32 w-32 mx-auto object-cover'
+            src="" 
+            alt="" />
+        <div>
+            <h1>
+                <span>{text}</span>
+                <Cursor cursorColor='#F7AB0A' />
+            </h1>
+        </div>
     </div>
   )
 }
